@@ -136,7 +136,7 @@ input[type=submit], input[type=reset] {
 }
 
 header {
-  background-image: url("../../img/hello/backgr.jpg");
+  background-image: url("/img/hello/backgr.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 64px;
@@ -305,7 +305,7 @@ header {
 }
 
 .book {
-  background-image: url("../../img/book/backgr.jpg");
+  background-image: url("/img/book/backgr.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 85px;
