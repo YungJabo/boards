@@ -76,6 +76,9 @@ input[type=submit], input[type=reset] {
   border: none;
 }
 
+.hello {
+  height: 100vh;
+}
 .hello__content {
   margin-top: 103px;
 }
@@ -176,6 +179,9 @@ header {
   left: -18px;
 }
 
+.why {
+  height: 100vh;
+}
 .why__top {
   padding-bottom: 113px;
 }
@@ -249,6 +255,7 @@ header {
 }
 
 .reviews {
+  height: 100vh;
   padding-bottom: 63px;
 }
 .reviews__title {
@@ -305,6 +312,7 @@ header {
 }
 
 .book {
+  height: 100vh;
   background-image: url("../img/book/backgr.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -421,7 +429,7 @@ header {
   border-radius: 4px;
 }
 .radio--checkbox .radio__visible::before {
-  background: url("../../img/book/check.png") center center no-repeat;
+  background: url("../img/book/check.png") center center no-repeat;
 }
 .radio__elem {
   display: none;
