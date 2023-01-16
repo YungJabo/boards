@@ -136,7 +136,7 @@ input[type=submit], input[type=reset] {
 }
 
 header {
-  background-image: url("../../img/hello/backgr.jpg");
+  background-image: url("../img/hello/backgr.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 64px;
@@ -305,7 +305,7 @@ header {
 }
 
 .book {
-  background-image: url("../../img/book/backgr.jpg");
+  background-image: url("../img/book/backgr.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 85px;
@@ -409,6 +409,13 @@ header {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 9px;
+}
+.radio__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
 }
 .radio--checkbox .radio__visible {
   border-radius: 4px;

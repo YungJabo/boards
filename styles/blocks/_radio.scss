@@ -4,6 +4,13 @@
     user-select: none;
     align-items: center;
     margin-right: 9px;
+    &__title{
+        font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+color: white;
+    }
     &--checkbox{
         
         .radio__visible{
