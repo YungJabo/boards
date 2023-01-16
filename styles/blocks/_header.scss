@@ -1,0 +1,97 @@
+.hello{
+
+
+    &__content{
+        margin-top: 103px;
+    }
+    &__title{
+        color: white;
+    }
+    &__subtitle{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 25px;
+        color: white;
+        margin-top: 17px;
+        margin-bottom: 60px;
+    }
+    .features{
+        margin-top: 85px;
+        display: flex;
+        gap: 33px;
+    }
+    .feature{
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        &__about{
+            width: 90px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            color: white;
+        }
+    }
+    
+}
+.menu{
+    display: flex;
+    &__list{
+        display: flex;
+        gap: 22px;
+    }
+    &__link{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 20px;
+        color: white;
+    }
+}
+header{
+    background-image: url('../../img/hello/backgr.jpg');
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 64px;
+    
+}
+.header{
+    &--top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 28px;
+    }
+    &--bottom{
+        margin-top: 103px;
+    }
+}
+
+
+.phone{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 18px;
+    color: white;
+    position: relative;
+}
+.phone::before{
+    content: "";
+    background: url('../img/hello/phone.png') center center no-repeat;
+
+    width: 13px;
+    height: 16px;
+    position:absolute;
+    left:-18px;
+    
+}
+
+
+
+
+
+
