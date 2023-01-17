@@ -20,14 +20,32 @@ a{
 body{
     font-family: 'Alegreya Sans';
 }
-h1{
+.h1{
+    text-align: center;
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 58px;
     text-transform: uppercase;
+    &--white{
+        color: white;
+
+    }
+    &--dark{
+        color: black;
+    }
+    &--hello{
+        text-align: start;
+    }
+    &--why{
+        margin-bottom: 17px;
+    }
+    &--book{
+        padding-bottom: 60px;
+    }
 }
-h4{
+
+.h4{
     font-style: normal;
     font-weight: 700;
     font-size: 27px;

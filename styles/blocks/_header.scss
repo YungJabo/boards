@@ -1,8 +1,11 @@
 .hello{
-
-    height: 100vh;
+    background-image: url('../img/hello/backgr.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
     &__content{
         margin-top: 103px;
+        height: 100vh;
     }
     &__title{
         color: white;
@@ -51,22 +54,17 @@
     }
 }
 header{
-    background-image: url('../img/hello/backgr.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-bottom: 64px;
+    
     
 }
 .header{
-    &--top{
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 28px;
-    }
-    &--bottom{
-        margin-top: 103px;
-    }
+    
+    
 }
 
 
