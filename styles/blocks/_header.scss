@@ -4,7 +4,9 @@
     background-repeat: no-repeat;
     
     &__content{
-        margin-top: 103px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         height: 100vh;
     }
     &__title{

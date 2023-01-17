@@ -12,6 +12,8 @@ a{
 .container{
     max-width: 940px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 .container--bigger{
     max-width: 980px;
@@ -20,30 +22,23 @@ a{
 body{
     font-family: 'Alegreya Sans';
 }
-.h1{
+.title{
     text-align: center;
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 58px;
     text-transform: uppercase;
-    &--white{
+    &--light{
         color: white;
-
     }
-    &--dark{
-        color: black;
-    }
-    &--hello{
+    &--first{
         text-align: start;
     }
-    &--why{
-        margin-bottom: 17px;
-    }
-    &--book{
-        padding-bottom: 60px;
-    }
 }
+
+
+
 
 .h4{
     font-style: normal;
@@ -63,6 +58,7 @@ body{
     border-radius: 100px;
     transition: .2s;
     cursor:pointer;
+    max-width: max-content;
     &:hover{
         background-color: rgb(69, 62, 62); 
         color: white;

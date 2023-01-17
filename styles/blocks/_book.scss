@@ -5,7 +5,7 @@
     background-image: url('../img/book/backgr.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 85px;
+    
     &__title{
         text-align: center;
         color: white;
@@ -16,6 +16,7 @@
 }
 .form{
     display: flex;
+    margin-top: 59px;
     &__col{
         flex: 1;
         margin-right: 54px;
