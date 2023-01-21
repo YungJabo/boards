@@ -1,8 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700;800&display=swap");
+
+html{
+    font-size: $baseFontSize;
+    @include tablets{
+        font-size: $baseFontSize - 1px;
+    }
+    @include phones{
+        font-size: $baseFontSize - 2px;
+    }
+}
+
 *{
     padding:0;
     margin: 0;
 }
+
+.wrapper{
+    width: 100%;
+}
+
 ul{
     list-style: none;
 }
@@ -10,15 +26,25 @@ a{
     text-decoration: none;
 }
 .container{
+    width: 95%;
     max-width: 940px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    position: relative;
+    &--header{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &--hello{
+        @include tablets{
+        align-items: center;
+        max-width: 665px;
+        }
+    }
 }
-.container--bigger{
-    max-width: 980px;
-    margin: 0 auto;
-}
+
 body{
     font-family: 'Alegreya Sans';
 }
@@ -26,36 +52,40 @@ body{
     text-align: center;
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
-    line-height: 58px;
+    font-size: rem(48px);
+    line-height: rem(58px);
     text-transform: uppercase;
     &--light{
         color: white;
     }
     &--first{
         text-align: start;
+        width: 580px;
+        @include tablets{
+            text-align: center;
+        }
     }
 }
 
 
 
 
-.h4{
+h4{
     font-style: normal;
     font-weight: 700;
-    font-size: 27px;
-    line-height: 32px;
+    font-size: rem(27px);
+    line-height: rem(32px);
 }
 .button{
     font-style: normal;
     font-weight: 800;
-    font-size: 16px;
-    line-height: 18px;
+    font-size: rem(16px);
+    line-height: rem(18px);
     text-transform: uppercase;
     color: black;
-    padding: 21px 41px;
+    padding: rem(21px) rem(41px);
     background-color: #FEDB3F;
-    border-radius: 100px;
+    border-radius: rem(100px);
     transition: .2s;
     cursor:pointer;
     max-width: max-content;

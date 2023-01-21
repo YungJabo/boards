@@ -1,3 +1,7 @@
+$baseFontSize : 18px;
+$tablets:768px;
+$phones:480px;
+@import './blocks/_media.scss';
 @import './_base.scss';
 @import './normalize.css';
 @import './blocks/_header.scss';
@@ -7,3 +11,4 @@
 @import './blocks/_radio.scss';
 @import './blocks/_fixed-menu.scss';
 @import './blocks/_section.scss';
+

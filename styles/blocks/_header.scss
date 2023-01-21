@@ -2,12 +2,25 @@
     background-image: url('../img/hello/backgr.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    @include tablets{
+        background-image: none;
+    }
     
     &__content{
         display: flex;
         flex-direction: column;
         justify-content: center;
         height: 100vh;
+        @include tablets{
+            margin: 0 auto;
+            text-align: center;
+            align-items:start;
+            background-image: url('/../img/hello/backgr__tablets.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
     }
     &__title{
         color: white;
@@ -15,27 +28,32 @@
     &__subtitle{
         font-style: normal;
         font-weight: 400;
-        font-size: 21px;
-        line-height: 25px;
+        font-size: rem(21px);
+        line-height: rem(25px);
         color: white;
-        margin-top: 17px;
-        margin-bottom: 60px;
+        margin-top: rem(17px);
+        margin-bottom: rem(60px);
     }
     .features{
-        margin-top: 85px;
+        margin-top: rem(85px);
         display: flex;
-        gap: 33px;
+        gap: rem(33px);
+        @include tablets{
+            &--hello{
+                display: none;
+            }
+        }
     }
     .feature{
         display: flex;
-        gap: 14px;
+        gap: rem(14px);
         align-items: center;
         &__about{
-            width: 90px;
+            width: rem(90px);
             font-style: normal;
             font-weight: 700;
-            font-size: 16px;
-            line-height: 18px;
+            font-size: rem(16px);
+            line-height: rem(18px);
             color: white;
         }
     }
@@ -45,26 +63,30 @@
     display: flex;
     &__list{
         display: flex;
-        gap: 22px;
+        gap: rem(22px);
     }
     &__link{
         font-style: normal;
         font-weight: 700;
-        font-size: 18px;
-        line-height: 20px;
+        font-size: rem(18px);
+        line-height: rem(20px);
         color: white;
     }
+    @include tablets{
+        display: none;
+    }
 }
-header{
-    
-    
-}
+
 .header{
     
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 28px;
+    padding-top: rem(28px);
+    @include tablets{
+        background-color: #1968B1;
+        padding-bottom: rem(28px);
+    }
     
     
 }
@@ -73,19 +95,24 @@ header{
 .phone{
     font-style: normal;
     font-weight: 700;
-    font-size: 22px;
-    line-height: 18px;
+    font-size: rem(22px);
+    line-height: rem(18px);
     color: white;
     position: relative;
+    @include tablets{
+    &--header{
+        display: none;
+    }
+    }   
 }
 .phone::before{
     content: "";
     background: url('../img/hello/phone.png') center center no-repeat;
 
-    width: 13px;
-    height: 16px;
+    width: rem(13px);
+    height: rem(16px);
     position:absolute;
-    left:-18px;
+    left:rem(-18px);
     
 }
 
