@@ -110,7 +110,7 @@ input[type="submit"], input[type="reset"] {
         margin: 0 auto;
         text-align: center;
         align-items: start;
-        background-image: url("/../img/hello/backgr__tablets.jpg");
+        background-image: url("../img/hello/backgr__tablets.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center; } }
@@ -429,6 +429,7 @@ input[type="submit"], input[type="reset"] {
   flex-direction: column;
   justify-content: center;
   position: relative;
-  min-height: 650px; }
+  min-height: 650px;
+  width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
