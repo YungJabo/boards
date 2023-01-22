@@ -292,9 +292,7 @@ input[type="submit"], input[type="reset"] {
       background-image: url("../img/book/backgr__tablets.jpg"); } }
   .book__title {
     text-align: center;
-    color: white;
-    padding-top: 3.4444444444rem;
-    margin-bottom: 3.3333333333rem; }
+    color: white; }
 
 .form {
   display: flex;
@@ -430,6 +428,7 @@ input[type="submit"], input[type="reset"] {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative; }
+  position: relative;
+  min-height: 650px; }
 
 /*# sourceMappingURL=main.css.map */
