@@ -14,7 +14,7 @@ html {
   margin: 0; }
 
 .wrapper {
-  width: 100%; }
+  min-width: 100%; }
 
 ul {
   list-style: none; }
@@ -52,10 +52,15 @@ body {
     color: white; }
   .title--first {
     text-align: start;
-    width: 580px; }
+    padding-right: 48%; }
     @media screen and (max-width: 768px) {
       .title--first {
-        text-align: center; } }
+        text-align: center;
+        padding: 0; } }
+    @media screen and (max-width: 480px) {
+      .title--first {
+        text-align: center;
+        padding: 0; } }
 
 h4 {
   font-style: normal;
@@ -107,11 +112,9 @@ input[type="submit"], input[type="reset"] {
     height: 100vh; }
     @media screen and (max-width: 768px) {
       .hello__content {
-        margin: 0 auto;
         text-align: center;
         align-items: start;
         background-image: url("../img/hello/backgr__tablets.jpg");
-        background-size: cover;
         background-repeat: no-repeat;
         background-position: center center; } }
   .hello__title {
@@ -189,6 +192,15 @@ input[type="submit"], input[type="reset"] {
 
 .why {
   height: 100vh; }
+  .why__block-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    @media screen and (max-width: 480px) {
+      .why__block-text {
+        align-items: flex-start;
+        margin-left: 12px; } }
   .why__bottom {
     background-color: #F8FAF9; }
   .why__title {
@@ -211,13 +223,23 @@ input[type="submit"], input[type="reset"] {
     justify-content: space-between;
     align-items: center;
     margin-top: 2.7777777778rem; }
+    @media screen and (max-width: 480px) {
+      .why__list {
+        flex-direction: column; } }
   .why__item {
     display: flex;
     flex-direction: column;
     align-items: center;
     align-self: flex-start; }
+    @media screen and (max-width: 480px) {
+      .why__item {
+        flex-direction: row;
+        align-items: flex-start; } }
     .why__item--between {
       margin-top: 3.1111111111rem; }
+      @media screen and (max-width: 480px) {
+        .why__item--between {
+          display: none; } }
   .why__img {
     width: 7.1111111111rem;
     margin-bottom: 1.1111111111rem; }
@@ -229,6 +251,9 @@ input[type="submit"], input[type="reset"] {
     font-size: 1rem;
     line-height: 1.2222222222rem;
     color: #666666; }
+    @media screen and (max-width: 480px) {
+      .why__text {
+        text-align: start; } }
 
 .parameters {
   background-color: #F8FAF9; }
@@ -303,6 +328,9 @@ input[type="submit"], input[type="reset"] {
   .form__col {
     flex: 1;
     margin-right: 3rem; }
+    @media screen and (max-width: 768px) {
+      .form__col {
+        margin-right: 0; } }
   .form__row {
     display: flex;
     margin-bottom: 0.6666666667rem; }
@@ -339,6 +367,9 @@ input[type="submit"], input[type="reset"] {
   .form__controls {
     display: flex;
     flex-wrap: wrap; }
+    @media screen and (max-width: 480px) {
+      .form__controls {
+        justify-content: center; } }
     .form__controls:nth-child(2) {
       margin-top: 1.4444444444rem; }
     .form__controls:nth-child(3) {

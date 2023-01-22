@@ -6,4 +6,7 @@
     position: relative;
     min-height: 650px;
     width: 100%;
+    @include tablets{
+        
+    }
 }

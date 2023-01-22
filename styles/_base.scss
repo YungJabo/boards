@@ -16,7 +16,7 @@ html{
 }
 
 .wrapper{
-    width: 100%;
+    min-width: 100%;
 }
 
 ul{
@@ -60,9 +60,14 @@ body{
     }
     &--first{
         text-align: start;
-        width: 580px;
+        padding-right: 48%;
         @include tablets{
             text-align: center;
+            padding: 0;
+        }
+        @include phones{
+            text-align: center;
+            padding: 0;
         }
     }
 }

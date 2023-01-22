@@ -13,11 +13,11 @@
         justify-content: center;
         height: 100vh;
         @include tablets{
-            margin: 0 auto;
+            
             text-align: center;
             align-items:start;
             background-image: url('../img/hello/backgr__tablets.jpg');
-            background-size: cover;
+          
             background-repeat: no-repeat;
             background-position: center center;
         }

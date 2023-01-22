@@ -25,6 +25,9 @@
     &__col{
         flex: 1;
         margin-right: rem(54px);
+        @include tablets{
+            margin-right: 0;
+        }
     }
     &__row{
         display: flex;
@@ -71,6 +74,9 @@ color: white;
     &__controls{
         display: flex;
         flex-wrap: wrap;
+        @include phones{
+            justify-content: center;
+        }
         &:nth-child(2){
             margin-top: rem(26px);
         }

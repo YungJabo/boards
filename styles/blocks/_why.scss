@@ -1,5 +1,15 @@
 .why{
     height: 100vh;
+    &__block-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include phones{
+            align-items: flex-start;
+            margin-left: 12px;
+        }
+    }
     &__top{
     
     }
@@ -28,6 +38,9 @@
         justify-content: space-between;
         align-items: center;
         margin-top: rem(50px);
+        @include phones{
+            flex-direction: column;
+        }
         
     }
     &__item{
@@ -35,8 +48,15 @@
         flex-direction: column;
         align-items: center;
         align-self: flex-start;
+        @include phones{
+            flex-direction: row;
+            align-items:flex-start;
+        }
         &--between{
             margin-top: rem(56px);
+            @include phones{
+                display: none;
+            }
         }
 
     }
@@ -52,6 +72,9 @@
         font-size: rem(18px);
         line-height: rem(22px);
         color:#666666;
+        @include phones{
+            text-align: start;
+        }
     }
 }
 .parameters{
