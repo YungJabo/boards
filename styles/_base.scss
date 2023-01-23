@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700;800&display=swap");
 
 html{
+    overflow-x: hidden;
     font-size: $baseFontSize;
     @include tablets{
         font-size: $baseFontSize - 1px;
@@ -16,7 +17,10 @@ html{
 }
 
 .wrapper{
-    min-width: 100%;
+    width: 100%;
+    &__content{
+        width: 100%;
+    }
 }
 
 ul{
@@ -43,10 +47,27 @@ a{
         max-width: 665px;
         }
     }
+    &--footer{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        @include phones{
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+    }
 }
 
 body{
     font-family: 'Alegreya Sans';
+}
+.logo{
+    &__icon{
+    width: rem(55px);
+    height: rem(40px);
+    }
 }
 .title{
     text-align: center;

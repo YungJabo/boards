@@ -42,6 +42,14 @@
         font-size: rem(18px);
         line-height: rem(22px);
         color: #666666;
+        @include tablets{
+            max-width: rem(677px);
+            padding-right: 25%;
+        }
+        @include phones{
+            max-width: rem(405px);
+            padding-right: 10%;
+        }
     }
     &__name{
         font-style: normal;

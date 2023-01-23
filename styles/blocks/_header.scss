@@ -2,7 +2,7 @@
     background-image: url('../img/hello/backgr.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     @include tablets{
         background-image: none;
     }
@@ -61,9 +61,12 @@
 }
 .menu{
     display: flex;
+    
     &__list{
         display: flex;
         gap: rem(22px);
+        flex-wrap: wrap;
+        justify-content: center;
     }
     &__link{
         font-style: normal;
@@ -71,6 +74,7 @@
         font-size: rem(18px);
         line-height: rem(20px);
         color: white;
+        white-space: nowrap;
     }
     @include tablets{
         display: none;
@@ -81,8 +85,9 @@
     
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding-top: rem(28px);
+   
     @include tablets{
         background-color: #1968B1;
         padding-bottom: rem(28px);
@@ -91,30 +96,35 @@
     
 }
 
-
 .phone{
+    display: flex;
+    align-items: center;
+    @include tablets{
+        &--header{
+            display: none;
+        }
+    }
+}
+.phone__number{
     font-style: normal;
     font-weight: 700;
     font-size: rem(22px);
     line-height: rem(18px);
     color: white;
     position: relative;
+    white-space: nowrap;
     @include tablets{
-    &--header{
-        display: none;
-    }
-    }   
-}
-.phone::before{
-    content: "";
-    background: url('../img/hello/phone.png') center center no-repeat;
-
-    width: rem(13px);
-    height: rem(16px);
-    position:absolute;
-    left:rem(-18px);
     
+    }  
+    &--footer{
+        color: black;
+        font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 21px;
+    }
 }
+
 
 
 

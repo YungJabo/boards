@@ -21,6 +21,8 @@
     margin-top: rem(59px);
     @include tablets{
         flex-direction: column;
+        padding-right: 4%;
+    
     }
     &__col{
         flex: 1;
@@ -42,6 +44,11 @@
         &:last-child{
             margin-right: 0;
         }
+        &--textarea{
+            @include tablets{
+                margin-right: 0;
+            }
+        }
     }
     &__input{
         border-radius: rem(4px);
@@ -51,10 +58,9 @@
         padding-bottom: rem(18px);
         padding-left: rem(12px);
         font-style: normal;
-font-weight: 400;
-font-size: rem(14px);
-line-height: rem(20px);
-        
+        font-weight: 400;
+        font-size: rem(14px);
+        line-height: rem(20px);
         border: rem(3px) solid transparent;
         &:focus{
             border: rem(3px) solid #FEDB3F;
@@ -62,6 +68,7 @@ line-height: rem(20px);
         &--textarea{
             height: rem(103px);
             resize: none;
+            width: 100%;
         }
     }
     &__title{

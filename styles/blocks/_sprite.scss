@@ -1,0 +1,11 @@
+.icon{
+    flex-shrink: 0;
+    width: rem(20px);
+    height: rem(20px);
+    &--phone{
+        width: rem(13px);
+        margin-right: rem(6px);
+        height: rem(14px);
+        
+    }
+}

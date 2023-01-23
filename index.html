@@ -15,7 +15,9 @@
                     <div class="container container--header">
                 
                     <a href="" class="logo">
-                        <img src="./img/hello/logo.png" alt="" class="logo__img">
+                        <svg class="logo__icon">
+                            <use xlink:href="sprite.svg#icon"></use>
+                          </svg>
                     </a>
                     <nav class="menu">
                         <ul class="menu__list">
@@ -28,7 +30,19 @@
                             <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
                         </ul>
                     </nav>
-                        <a href="tel:+78009039090"  class="phone phone--header">8 800 903 90 90</a>
+                    <div class="phone phone--header">
+                        <a href="tel:+78009039090"  class="phone__number phone_number--header">
+                        <svg class="icon icon--phone">
+                            <use xlink:href="sprite.svg#phone__svg"></use>
+                          </svg>
+                        8 800 903 90 90</a>
+                    </div>
+                    <a href="" class="burger">
+                        <span class="burger__plank"></span>
+                        <span class="burger__plank"></span>
+                        <span class="burger__plank"></span>
+                        
+                    </a>
                     </div>
                     </header>
                     <div class="hello__content">
@@ -189,7 +203,7 @@
                     </div>
                     <div class="form__col">
                         <div class="form__row form__row--right">
-                            <label class="form__block">
+                            <label class="form__block form__block--textarea">
                                 <div class="form__title">Комментарий</div>
                                 <textarea class="form__input form__input--textarea"></textarea>
                             </label>
@@ -229,6 +243,42 @@
                 </div>
             </section>
         
+            <section class="section contacts">
+            </section>
+            <footer class="footer">
+                <div class="container container--footer">
+                    <div class="footer__left">
+                        <address class="address">
+                            <div class="address__text">Москва, ул.Новый Арбат, д.31/12</div>
+                            <div class="phone">
+                                <a href="tel:+78009039090"  class="phone__number phone__number--footer">
+                                <svg class="icon icon--phone icon--black">
+                                    <use xlink:href="sprite.svg#phone__svg"></use>
+                                  </svg>
+                                8 800 903 90 90</a>
+                            </div>
+                        </address>
+                    </div>
+                    <div class="footer__right">
+                        <ul class="socials">
+                            <li class="social"><a href="" class="social__link"><svg class="icon">
+                                <use xlink:href="sprite.svg#vk"></use>
+                              </svg></a></li>
+                            <li class="social"><a href="" class="social__link"><svg class="icon">
+                                <use xlink:href="sprite.svg#f"></use>
+                              </svg></a></li>
+                            <li class="social"><a href="" class="social__link"><svg class="icon">
+                                <use xlink:href="sprite.svg#in"></use>
+                              </svg></a></li>
+                            <li class="social"><a href="" class="social__link"><svg class="icon">
+                                <use xlink:href="sprite.svg#tv"></use>
+                              </svg></a></li>
+                        </ul>
+                    </div>
+
+                    
+                </div>
+            </footer>
         </div>
     </div>
     <nav class="fixed-menu">
