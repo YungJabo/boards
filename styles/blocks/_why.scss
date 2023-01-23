@@ -1,5 +1,16 @@
 .why{
     height: 100vh;
+    &__circle{
+        background: #F2F5F4;
+        width: 128px;
+        height: 128px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: rem(20px);
+        flex-shrink: 0;
+    }
     &__block-text{
         display: flex;
         flex-direction: column;

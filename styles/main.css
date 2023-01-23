@@ -214,6 +214,16 @@ input[type="submit"], input[type="reset"] {
 
 .why {
   height: 100vh; }
+  .why__circle {
+    background: #F2F5F4;
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.1111111111rem;
+    flex-shrink: 0; }
   .why__block-text {
     display: flex;
     flex-direction: column;
@@ -513,6 +523,12 @@ input[type="submit"], input[type="reset"] {
     width: 0.7222222222rem;
     margin-right: 0.3333333333rem;
     height: 0.7777777778rem; }
+  .icon--why {
+    width: 64px;
+    height: 64px; }
+  .icon--feature {
+    width: 41px;
+    height: 41px; }
 
 .footer {
   height: 8.3888888889rem;
