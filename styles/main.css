@@ -1222,9 +1222,7 @@ input[type=submit], input[type=reset] {
   bottom: 0;
   background: #313131;
   z-index: 1000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1234,11 +1232,17 @@ input[type=submit], input[type=reset] {
   position: fixed;
 }
 .overlay__container {
-  margin-top: 135px;
+  margin-top: 42px;
   position: relative;
-  padding: 0 2.3333333333rem;
+  padding: 0 11.1111111111rem;
+}
+.overlay .open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .overlay .menu--overlay {
+  margin-top: 73px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1247,7 +1251,7 @@ input[type=submit], input[type=reset] {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.overlay .menu--overlay .menu__list {
+.overlay .menu--overlay .menu__list--overlay {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1273,5 +1277,4 @@ input[type=submit], input[type=reset] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: 100000;
 }

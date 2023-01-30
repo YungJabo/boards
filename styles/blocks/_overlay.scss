@@ -6,22 +6,25 @@
     bottom: 0;
     background: #313131;
     z-index: 1000;
-    display: flex;
+    display: none;
     justify-content: center;
     overflow: hidden;
     height: 100vh;
     overflow: hidden;
     position: fixed;
    &__container{
-    margin-top: 135px;
+    margin-top: 42px;
     position: relative;
-    padding: 0 rem(42px);
-    
+    padding: 0 rem(200px);
+   }
+   .open{
+    display: flex;
    }
    .menu--overlay{
+    margin-top: 73px;
     display: flex;
     flex-direction: column;
-    .menu__list{
+    .menu__list--overlay{
         align-items: center;
         display: flex;
         flex-direction: column;
@@ -39,5 +42,5 @@
     position: absolute;
     right: 0;
     display: flex;
-    z-index: 100000;
+    
 }
