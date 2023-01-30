@@ -1,0 +1,38 @@
+.overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #313131;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+   &__container{
+    margin-top: 135px;
+    
+   }
+   .menu--overlay{
+    display: flex;
+    flex-direction: column;
+    .menu__list{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: rem(40px);
+    }
+   }
+   .menu__link{
+    font-size: rem(36px);
+    font-weight: 400;
+   }
+}
+.icon--close{
+    width: 20px;
+    height: 20px;
+    position: relative;
+}

@@ -1,0 +1,69 @@
+.slider{
+    background: #F8FAF9;
+    &__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        position: relative;
+    }
+    &__arrow{
+        position: absolute;
+        &:hover{
+            cursor: pointer;
+        }
+        &--left{
+            left:0;
+        }
+        &--right{
+            right: 0;
+            rotate: 180deg;
+        }
+    }
+    &__content{
+        display: flex;
+    }
+    &__image-block{
+        width: 45%;
+    }
+    &__about{
+        width: 50%;
+    }
+    &__parameters{
+        background: #3A587E;
+        width: rem(91px);
+        height: rem(91px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: rem(4px);
+        margin-bottom: rem(52px);
+        cursor: pointer;
+    }
+    &__subtitle{
+        margin-bottom: rem(24px);
+    }
+    &__features{
+        display: flex;
+        gap: rem(55px);
+    }
+    &__bottom{
+        margin-top: rem(24px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.title--slider{
+    text-align: start;
+    margin-bottom: rem(24px);
+}
+.icon--parameters{
+    width: rem(38px);
+    height: rem(38px);
+}
+.icon--arrow{
+    width: rem(24px);
+    height: rem(40px);
+}
