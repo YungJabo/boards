@@ -2,6 +2,8 @@ let menu = document.querySelector(".menu");
 let menu__list = document.querySelector(".menu__list");
 let menu__link= document.querySelector(".menu__link");
 let burger = document.querySelector(".burger");
+let overlay__js = document.querySelector(".overlay__js");
+let fixed__menu = document.querySelector(".fixed__menu");
 
 
 
@@ -21,7 +23,7 @@ burger.addEventListener("click", e=>{
     overlay__container.appendChild(close);
     overlay__container.appendChild(menu);
     overlay.appendChild(overlay__container);
-    document.body.appendChild(overlay);
-   
+    // document.body.insertBefore(overlay, overlay__js);
+    document.body.insertBefore(overlay,fixed__menu);
     console.log("ok");
 });

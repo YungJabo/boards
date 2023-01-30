@@ -1,11 +1,31 @@
 .slider{
+    min-height: 816px;
     background: #F8FAF9;
-    &__container{
+    &__image-block{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    &__image{
+        width: rem(420px);
+        height: rem(538px);
+        @include tablets{
+            width: rem(318px);
+            height: rem(417px);
+        }
+        @include phones{
+            width: rem(252px);
+            height: rem(331px);
+        }
+    }
+    &__container{
+        display: flex;
+        
+        align-items:center;
         flex-direction: row;
         position: relative;
+       
+
     }
     &__arrow{
         position: absolute;
@@ -20,29 +40,51 @@
             rotate: 180deg;
         }
     }
-    &__content{
-        display: flex;
-    }
+    
     &__image-block{
         width: 45%;
     }
     &__about{
-        width: 50%;
+        width: 40%;
+        @include tablets{
+            width: 70%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
     &__parameters{
-        background: #3A587E;
-        width: rem(91px);
-        height: rem(91px);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border-radius: rem(4px);
+        
         margin-bottom: rem(52px);
         cursor: pointer;
+        display: flex;
+        position: relative;
+        width: 97%;
+        &:hover .parameters{
+            display: flex;
+        }
+        &--visible{
+            background: #3A587E;
+            width: rem(91px);
+            height: rem(91px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: rem(4px);
+        }
+    @include tablets{
+        display: none;
+    }
     }
     &__subtitle{
         margin-bottom: rem(24px);
+        font-style: normal;
+        font-weight: 400;
+        font-size: rem(18px);
+        line-height: rem(22px);
+        color: #666666;
     }
     &__features{
         display: flex;
@@ -53,15 +95,113 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include tablets{
+            gap: rem(40px);
+            justify-content: center;
+            align-items: center;
+        }
     }
+    &__parameters-name{
+        font-weight: 700;
+        font-size: rem(14px);
+        line-height: rem(17px);
+        color: white;
+        text-transform: uppercase;
+        margin-top: rem(7px);
+    }
+    &__parameter{
+        font-style: normal;
+        font-weight: 400;
+        font-size: rem(18px);
+        line-height: rem(22px);
+        color: #666666;
+        white-space: nowrap;
+    }
+    &__parameter-info{
+        font-style: normal;
+        font-weight: 700;
+        font-size: rem(18px);
+        line-height: rem(22px);
+        white-space: nowrap;
+    }
+    &__cost{
+        font-style: normal;
+        font-weight: 300;
+        font-size: rem(60px);
+        line-height: rem(60px);
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+}
+
+.parameters{
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(20px);
+    position: absolute;
+    right: 0;
+    border-radius: rem(4px);
+    width: rem(273px);
+    height: rem(291px);
+    flex-direction: column;
+    justify-content: space-around;
+    display: none;
+    &__item{
+        display: flex;
+        margin-left: rem(30px);
+        align-items: center;
+        
+    }
+    &__name{
+        margin-left: rem(16px);
+        font-style: normal;
+        font-weight: 500;
+        font-size: rem(16px);
+        line-height: rem(24px);
+        color: black;
+    }
+    &__value{
+    flex-grow: 1;
+    text-align: right;
+    margin-right: rem(25px);
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(16px);
+    line-height: rem(24px);
+    color: black;
+    }
+    opacity: .97;
+}
+.sliders{
+        display: flex;
+        justify-content: center;
+        @include tablets{
+            align-items: center;    
+        }
+        &__item{
+            display: flex;
+            justify-content: center;
+            @include tablets{
+                flex-direction: column;
+                align-items:center;
+                justify-content:center;
+            }
+        }
 }
 .title--slider{
     text-align: start;
     margin-bottom: rem(24px);
+    @include tablets{
+        text-align: center;
+    }
 }
 .icon--parameters{
     width: rem(38px);
     height: rem(38px);
+}
+.icon--parameter{
+    width: rem(32px);
+    height: rem(32px);
 }
 .icon--arrow{
     width: rem(24px);

@@ -14,6 +14,8 @@
     position: fixed;
    &__container{
     margin-top: 135px;
+    position: relative;
+    padding: 0 rem(42px);
     
    }
    .menu--overlay{
@@ -34,5 +36,8 @@
 .icon--close{
     width: 20px;
     height: 20px;
-    position: relative;
+    position: absolute;
+    right: 0;
+    display: flex;
+    z-index: 100000;
 }
