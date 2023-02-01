@@ -8,14 +8,21 @@
     z-index: 1000;
     display: none;
     justify-content: center;
-    overflow: hidden;
     height: 100vh;
-    overflow: hidden;
     position: fixed;
+    &__close-link{
+        position: absolute;
+        right: 0;
+        display: flex;
+    }
    &__container{
     margin-top: 42px;
     position: relative;
-    padding: 0 rem(200px);
+    padding: 0 20%;
+    
+    @include phones{
+        padding: 0 10%;
+    }
    }
    .open{
     display: flex;
@@ -39,8 +46,7 @@
 .icon--close{
     width: 20px;
     height: 20px;
-    position: absolute;
-    right: 0;
-    display: flex;
+    
     
 }
+
