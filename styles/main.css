@@ -1228,6 +1228,7 @@ input[type=submit], input[type=reset] {
           justify-content: center;
   height: 100vh;
   position: fixed;
+  justify-content: center;
 }
 .overlay__close-link {
   position: absolute;
@@ -1237,9 +1238,12 @@ input[type=submit], input[type=reset] {
   display: flex;
 }
 .overlay__container {
-  margin-top: 42px;
-  position: relative;
-  padding: 0 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (max-width: 480px) {
   .overlay__container {
@@ -1252,7 +1256,9 @@ input[type=submit], input[type=reset] {
   display: flex;
 }
 .overlay .menu--overlay {
-  margin-top: 73px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1277,6 +1283,10 @@ input[type=submit], input[type=reset] {
 .overlay .menu__link {
   font-size: 2rem;
   font-weight: 400;
+}
+.overlay__close-link {
+  margin-top: 2.3333333333rem;
+  margin-right: 2.3333333333rem;
 }
 
 .icon--close {
