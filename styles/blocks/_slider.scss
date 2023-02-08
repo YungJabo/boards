@@ -1,4 +1,9 @@
 .slider{
+    .bx-wrapper{
+        background: none;
+        border: none;
+        box-shadow: none;
+    }
     min-height: 816px;
     background: #F8FAF9;
     &__image-block{
@@ -187,7 +192,9 @@
                 justify-content:center;
             }
         }
+        
 }
+
 .title--slider{
     text-align: start;
     margin-bottom: rem(24px);

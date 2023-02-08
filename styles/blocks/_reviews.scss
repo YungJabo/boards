@@ -28,6 +28,9 @@
         display: flex;
         flex-direction: column;
         margin-left: rem(38px);
+        @include tablets{
+            margin-left: 0;
+        }
     }
     &__heading{
         margin-top: rem(28px);
@@ -58,11 +61,56 @@
         line-height: rem(24px);
         color: #292929;
     }
-    &__list{
+    &__icons{
         display: flex;
         justify-content: center;
         gap: rem(6px);
         margin-top: rem(15px);
+    }
+    &__list{
+        display: flex;
+    }
+    &__item{
+        display: flex;
+        max-width: rem(463px);
+        position: absolute;
+        opacity: 0;
+        transition: .5s;
+        min-height: 252px; 
+        @include tablets{
+            flex-direction: column;
+            align-items: center;
+            max-width: 677px;
+            justify-content: center;
+        }
+        @include phones{
+            max-width: 405px;
+        }
+        &--active{
+            position: static;
+            opacity: 1;
+        }
+    }
+    &__icon{
+        border: 6px solid transparent;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: rem(74px);
+        height: rem(74px);
+        transition: .2s;
+        &:hover{
+            border:6px solid #FEDB3F;
+        }
+        
+        &--active{
+            border:6px solid #FEDB3F;
+        }
+    }
+    &__link{
+        width: rem(74px);
+        height: rem(74px);
     }
     
 }

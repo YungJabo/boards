@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boards</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
@@ -146,11 +148,7 @@
 
             <section class="section slider">
                 <div class="container slider__container">
-                    <div class="slider__arrow slider__arrow--left">
-                        <svg class="icon icon--arrow">
-                            <use xlink:href="sprite.svg#arrow"></use>
-                          </svg>
-                    </div>
+                   
                     <ul class="sliders">
                         <li class="sliders__item">
                         <div class="slider__image-block">
@@ -222,12 +220,231 @@
                             </div>
                         </div>
                     </li>
+
+                    <li class="sliders__item">
+                        <div class="slider__image-block">
+                            <img src="./img/slider/board.png" alt="" class="slider__image">
+                        </div>
+                        <div class="slider__about">
+                            <div class="slider__parameters">
+                                <div class="slider__parameters--visible">
+                                <svg g class="icon icon--parameters">
+                                    <use xlink:href="sprite.svg#arrows"></use>
+                                  </svg>
+                                  <div class="slider__parameters-name">параметры</div>
+                                </div>
+                                <ul class="parameters">
+                                    <li class="parameters__item">
+                                        <svg class="icon icon--parameter">
+                                            <use xlink:href="sprite.svg#length"></use>
+                                        </svg>
+                                        <div class="parameters__name">Длина доски</div>
+                                        <div class="parameters__value">от 2,5 м</div>
+                                    </li>
+                                    <li class="parameters__item">
+                                        <svg class="icon icon--parameter">
+                                            <use xlink:href="sprite.svg#width"></use>
+                                        </svg>
+                                        <div class="parameters__name">Ширина доски</div>
+                                        <div class="parameters__value">от 40 см</div>
+                                    </li>
+                                    <li class="parameters__item">
+                                        <svg class="icon icon--parameter">
+                                            <use xlink:href="sprite.svg#thickness"></use>
+                                        </svg>
+                                        <div class="parameters__name">Толщина</div>
+                                        <div class="parameters__value">8 см</div>
+                                    </li>
+                                    <li class="parameters__item">
+                                        <svg class="icon icon--parameter">
+                                            <use xlink:href="sprite.svg#life time"></use>
+                                        </svg>
+                                        <div class="parameters__name">Срок службы</div>
+                                        <div class="parameters__value">5 лет</div>
+                                    </li>
+                                    <li class="parameters__item">
+                                        <svg class="icon icon--parameter">
+                                            <use xlink:href="sprite.svg#weight"></use>
+                                        </svg>
+                                        <div class="parameters__name">Вес</div>
+                                        <div class="parameters__value">7-8 кг</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h3 class="title title--slider">Лонгборд 2.0</h3>
+                            <p class="slider__subtitle">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.
+                            </p>
+                            <ul class="slider__features">
+                                <li class="slider__feature">
+                                    <div class="slider__parameter">Длина доски</div>
+                                    <div class="slider__parameter-info">от 2,5 метров</div>
+                                </li>
+
+                                <li class="slider__feature">
+                                    <div class="slider__parameter">Ширина доски</div>
+                                    <div class="slider__parameter-info">от 40 сантиметров</div>
+                                </li>
+                            </ul>
+                            <div class="slider__bottom">
+                                <div class="slider__cost">7000 ₽</div>
+                                <a href="" class="button">ЗАКАЗАТЬ</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="sliders__item">
+                        <div class="slider__image-block">
+                            <img src="./img/slider/board.png" alt="" class="slider__image">
+                        </div>
+                        <div class="slider__about">
+                            <div class="slider__parameters">
+                                <div class="slider__parameters--visible">
+                                <svg g class="icon icon--parameters">
+                                    <use xlink:href="sprite.svg#arrows"></use>
+                                  </svg>
+                                  <div class="slider__parameters-name">параметры</div>
+                                </div>
+                                <ul class="parameters">
+                                    <li class="parameters__item">
+                                        <svg class="icon icon--parameter">
+                                            <use xlink:href="sprite.svg#length"></use>
+                                        </svg>
+                                        <div class="parameters__name">Длина доски</div>
+                                        <div class="parameters__value">от 2,5 м</div>
+                                    </li>
+                                    <li class="parameters__item">
+                                        <svg class="icon icon--parameter">
+                                            <use xlink:href="sprite.svg#width"></use>
+                                        </svg>
+                                        <div class="parameters__name">Ширина доски</div>
+                                        <div class="parameters__value">от 40 см</div>
+                                    </li>
+                                    <li class="parameters__item">
+                                        <svg class="icon icon--parameter">
+                                            <use xlink:href="sprite.svg#thickness"></use>
+                                        </svg>
+                                        <div class="parameters__name">Толщина</div>
+                                        <div class="parameters__value">8 см</div>
+                                    </li>
+                                    <li class="parameters__item">
+                                        <svg class="icon icon--parameter">
+                                            <use xlink:href="sprite.svg#life time"></use>
+                                        </svg>
+                                        <div class="parameters__name">Срок службы</div>
+                                        <div class="parameters__value">5 лет</div>
+                                    </li>
+                                    <li class="parameters__item">
+                                        <svg class="icon icon--parameter">
+                                            <use xlink:href="sprite.svg#weight"></use>
+                                        </svg>
+                                        <div class="parameters__name">Вес</div>
+                                        <div class="parameters__value">7-8 кг</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h3 class="title title--slider">Лонгборд 2.0</h3>
+                            <p class="slider__subtitle">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.
+                            </p>
+                            <ul class="slider__features">
+                                <li class="slider__feature">
+                                    <div class="slider__parameter">Длина доски</div>
+                                    <div class="slider__parameter-info">от 2,5 метров</div>
+                                </li>
+
+                                <li class="slider__feature">
+                                    <div class="slider__parameter">Ширина доски</div>
+                                    <div class="slider__parameter-info">от 40 сантиметров</div>
+                                </li>
+                            </ul>
+                            <div class="slider__bottom">
+                                <div class="slider__cost">7000 ₽</div>
+                                <a href="" class="button">ЗАКАЗАТЬ</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="sliders__item">
+                        <div class="slider__image-block">
+                            <img src="./img/slider/board.png" alt="" class="slider__image">
+                        </div>
+                        <div class="slider__about">
+                            <div class="slider__parameters">
+                                <div class="slider__parameters--visible">
+                                <svg g class="icon icon--parameters">
+                                    <use xlink:href="sprite.svg#arrows"></use>
+                                  </svg>
+                                  <div class="slider__parameters-name">параметры</div>
+                                </div>
+                                <ul class="parameters">
+                                    <li class="parameters__item">
+                                        <svg class="icon icon--parameter">
+                                            <use xlink:href="sprite.svg#length"></use>
+                                        </svg>
+                                        <div class="parameters__name">Длина доски</div>
+                                        <div class="parameters__value">от 2,5 м</div>
+                                    </li>
+                                    <li class="parameters__item">
+                                        <svg class="icon icon--parameter">
+                                            <use xlink:href="sprite.svg#width"></use>
+                                        </svg>
+                                        <div class="parameters__name">Ширина доски</div>
+                                        <div class="parameters__value">от 40 см</div>
+                                    </li>
+                                    <li class="parameters__item">
+                                        <svg class="icon icon--parameter">
+                                            <use xlink:href="sprite.svg#thickness"></use>
+                                        </svg>
+                                        <div class="parameters__name">Толщина</div>
+                                        <div class="parameters__value">8 см</div>
+                                    </li>
+                                    <li class="parameters__item">
+                                        <svg class="icon icon--parameter">
+                                            <use xlink:href="sprite.svg#life time"></use>
+                                        </svg>
+                                        <div class="parameters__name">Срок службы</div>
+                                        <div class="parameters__value">5 лет</div>
+                                    </li>
+                                    <li class="parameters__item">
+                                        <svg class="icon icon--parameter">
+                                            <use xlink:href="sprite.svg#weight"></use>
+                                        </svg>
+                                        <div class="parameters__name">Вес</div>
+                                        <div class="parameters__value">7-8 кг</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h3 class="title title--slider">Лонгборд 2.0</h3>
+                            <p class="slider__subtitle">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.
+                            </p>
+                            <ul class="slider__features">
+                                <li class="slider__feature">
+                                    <div class="slider__parameter">Длина доски</div>
+                                    <div class="slider__parameter-info">от 2,5 метров</div>
+                                </li>
+
+                                <li class="slider__feature">
+                                    <div class="slider__parameter">Ширина доски</div>
+                                    <div class="slider__parameter-info">от 40 сантиметров</div>
+                                </li>
+                            </ul>
+                            <div class="slider__bottom">
+                                <div class="slider__cost">7000 ₽</div>
+                                <a href="" class="button">ЗАКАЗАТЬ</a>
+                            </div>
+                        </div>
+                    </li>
                     </ul>
+                    <div class="slider__arrow slider__arrow--left">
+                        <svg class="icon icon--arrow">
+                            <use xlink:href="sprite.svg#arrow"></use>
+                          </svg>
+                    </div>
                     <div class="slider__arrow slider__arrow--right">
                         <svg class="icon icon--arrow">
                             <use xlink:href="sprite.svg#arrow"></use>
                           </svg>
                     </div>
+                    
                 </div>
             </section>
 
@@ -360,7 +577,9 @@
                         ОТЗЫВЫ
                     </h2>
                     <div class="reviews__content">
-                        <img src="./img/reviews/avatar1.png" alt="" class="reviews__avatar">
+                        <ul class="reviews__list">
+                            <li class="reviews__item reviews__item--active" data-link="one">
+                        <img src="./img/reviews/avatar1.jpg" alt="" class="reviews__avatar">
                         <div class="reviews__about">
                             <h4 class="reviews__heading">Лучший дизайн</h4>
                             <p class="reviews__text">Я увидела доски на сайте и влюбилась в их дизайн. К летнему сезону я заказала себе доску в SurfBoard. Дизайнер команды - волшебница! Она учла все мои предпочтения и комментарии. В итоге получился прекрасный дизайн. А я катаюсь на доске, которая мне нравится)
@@ -368,21 +587,48 @@
                             <div class="reviews__name">Ольга Макарова
                             </div>
                         </div>
+                         </li>
+
+                         <li class="reviews__item" data-link="two">
+                            <img src="./img/reviews/avatar2.jpg" alt="" class="reviews__avatar">
+                            <div class="reviews__about">
+                                <h4 class="reviews__heading">Нереальная скорость</h4>
+                                <p class="reviews__text">Я занимаюсь профессиональным спортом. Доверил изготовление доски для соревнований ребятам из Surfboard и не пожалел: 1 место на соревнованиях. 
+                                    Нереальная скорость, устойчивая, удобная и легкая: всё что нужно для победы на соревнованиях!
+                                    
+                                </p>
+                                <div class="reviews__name">Марк Брюлов
+                                </div>
+                            </div>
+                             </li>
+
+                             <li class="reviews__item" data-link="three">
+                                <img src="./img/reviews/avatar3.jpg" alt="" class="reviews__avatar">
+                                <div class="reviews__about">
+                                    <h4 class="reviews__heading">Устойчивость и безопасность</h4>
+                                    <p class="reviews__text">Я заказывал доски для своих детей. Мне было важно, чтобы они были устойчивые, так как безопасность детей на первом месте. Доски были изготовлены по индивидуальным замерам с учетом роста и веса каждого ребенка. Теперь дети катаются и им нравится!
+                                    </p>
+                                    <div class="reviews__name">Василий Поперечный
+
+                                    </div>
+                                </div>
+                                 </li>
+                        </ul>
                     </div>
-                    <ul class="reviews__list">
-                        <li class="reviews__item">
-                            <a href="" class="reviews__link">
-                                <img src="./img/reviews/ico1.png" alt="" class="reviews__icon">
+                    <ul class="reviews__icons">
+                        <li class="reviews__icon reviews__icon--active" >
+                            <a href="" class="reviews__link" data-open="one">
+                                <img src="./img/reviews/ico1.png" alt="" class="reviews__img">
                             </a>
                         </li>
-                        <li class="reviews__item">
-                            <a href="" class="reviews__link">
-                                <img src="./img/reviews/ico2.png" alt="" class="reviews__icon">
+                        <li class="reviews__icon">
+                            <a href="" class="reviews__link" data-open="two">
+                                <img src="./img/reviews/ico2.png" alt="" class="reviews__img">
                             </a>
                         </li>
-                        <li class="reviews__item">
-                            <a href="" class="reviews__link">
-                                <img src="./img/reviews/ico3.png" alt="" class="reviews__icon">
+                        <li class="reviews__icon">
+                            <a href="" class="reviews__link" data-open="three">
+                                <img src="./img/reviews/ico3.png" alt="" class="reviews__img">
                             </a>
                         </li>
                     </ul>
@@ -392,16 +638,17 @@
             <section class="section book">
                 <div class="container">
                     <h2 class="title title--light">закажите доску</h2>
-                   <form action="" class="form">
+                   <form class="form">
                     <div class="form__col">
+                        <input type="hidden" name="to" value="somewhere@mail.ru">
                         <div class="form__row">
                             <label  class="form__block">
                                 <div class="form__title">Имя</div>
-                                <input type="text" class="form__input">
+                                <input type="text" class="form__input" name="name">
                             </label>
                             <label class="form__block">
                                 <div class="form__title">Телефон</div>
-                                <input type="text" class="form__input">
+                                <input type="text" class="form__input" name="phone">
                             </label>
                         </div>
                         <div class="form__row">
@@ -434,7 +681,7 @@
                         <div class="form__row form__row--right">
                             <label class="form__block form__block--textarea">
                                 <div class="form__title">Комментарий</div>
-                                <textarea class="form__input form__input--textarea"></textarea>
+                                <textarea class="form__input form__input--textarea" name="comment"></textarea>
                             </label>
                         
                         
@@ -543,9 +790,27 @@
             </nav>
         </div>
     </div>
+
+    <div class="modal" id="modal">
+        <div class="modal__container">
+            
+            <div class="modal__content">
+                Сообщение отправлено
+            </div>
+            <div class="modal__button-container">
+                <a href="" class="button app-close-modal">Закрыть</a>
+            </div>
+        </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="./team.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
+    <script src="./slider.js"></script>
+    <script src="./slideShow.js"></script>
+    <script src="./modal.js"></script>
     <script src="./overlay.js"></script>
+
 
 </body>
 </html>

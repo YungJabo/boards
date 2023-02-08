@@ -525,6 +525,11 @@ input[type=submit], input[type=reset] {
           flex-direction: column;
   margin-left: 2.1111111111rem;
 }
+@media screen and (max-width: 768px) {
+  .reviews__about {
+    margin-left: 0;
+  }
+}
 .reviews__heading {
   margin-top: 1.5555555556rem;
   margin-bottom: 0.7777777778rem;
@@ -558,7 +563,7 @@ input[type=submit], input[type=reset] {
   line-height: 1.3333333333rem;
   color: #292929;
 }
-.reviews__list {
+.reviews__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -567,6 +572,73 @@ input[type=submit], input[type=reset] {
           justify-content: center;
   gap: 0.3333333333rem;
   margin-top: 0.8333333333rem;
+}
+.reviews__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.reviews__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 25.7222222222rem;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  min-height: 252px;
+}
+@media screen and (max-width: 768px) {
+  .reviews__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 677px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reviews__item {
+    max-width: 405px;
+  }
+}
+.reviews__item--active {
+  position: static;
+  opacity: 1;
+}
+.reviews__icon {
+  border: 6px solid transparent;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 4.1111111111rem;
+  height: 4.1111111111rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.reviews__icon:hover {
+  border: 6px solid #FEDB3F;
+}
+.reviews__icon--active {
+  border: 6px solid #FEDB3F;
+}
+.reviews__link {
+  width: 4.1111111111rem;
+  height: 4.1111111111rem;
 }
 
 .book {
@@ -700,6 +772,12 @@ input[type=submit], input[type=reset] {
 }
 .form__btns .button:last-child {
   margin-left: 1.2222222222rem;
+}
+
+.input-error {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: 0.1666666667rem solid #ce0000;
 }
 
 .radio {
@@ -918,6 +996,12 @@ input[type=submit], input[type=reset] {
 .slider {
   min-height: 816px;
   background: #F8FAF9;
+}
+.slider .bx-wrapper {
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .slider__image-block {
   display: -webkit-box;
@@ -1373,8 +1457,8 @@ input[type=submit], input[type=reset] {
   position: absolute;
   top: 100%;
   max-width: 12.2777777778rem;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 @media screen and (max-width: 768px) {
   .team__content {
@@ -1402,11 +1486,57 @@ input[type=submit], input[type=reset] {
   left: 100%;
   top: 0.5555555556rem;
   margin-left: 0.2222222222rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.6s cubic-bezier(0.17, -0.2, 0.47, 1.27);
+  transition: 0.6s cubic-bezier(0.17, -0.2, 0.47, 1.27);
 }
 
 .icon--active {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  z-index: 600;
+}
+.modal--open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.modal__container {
+  background: white;
+  padding: 35px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 15px;
+  max-width: 600px;
+}
+.modal__content {
+  margin-bottom: 40px;
+}
+.modal__content--error {
+  color: red;
 }
