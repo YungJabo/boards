@@ -1472,7 +1472,7 @@ input[type=submit], input[type=reset] {
 }
 @media screen and (max-width: 768px) {
   .team__content {
-    position: sticky;
+    position: static;
   }
 }
 .team__profession {
