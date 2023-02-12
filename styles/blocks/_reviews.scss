@@ -97,8 +97,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: rem(74px);
-        height: rem(74px);
+        width: 74px;
+        height: 74px;
         transition: .2s;
         &:hover{
             border:6px solid #FEDB3F;
@@ -109,8 +109,8 @@
         }
     }
     &__link{
-        width: rem(74px);
-        height: rem(74px);
+        width: 74px;
+        height: 74px;
     }
     
 }

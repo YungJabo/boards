@@ -635,8 +635,8 @@ input[type=submit], input[type=reset] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 4.1111111111rem;
-  height: 4.1111111111rem;
+  width: 74px;
+  height: 74px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -647,8 +647,8 @@ input[type=submit], input[type=reset] {
   border: 6px solid #FEDB3F;
 }
 .reviews__link {
-  width: 4.1111111111rem;
-  height: 4.1111111111rem;
+  width: 74px;
+  height: 74px;
 }
 
 .book {
