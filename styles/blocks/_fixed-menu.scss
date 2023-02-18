@@ -2,6 +2,22 @@
     position: fixed;
     top:35%;
     right:4%;
+    &--black{
+        transition: .4s;
+        .fixed-menu__link::after{
+            background: black;
+            transition: .4s;
+        }
+        .fixed-menu__item:hover{
+            border-color: black;
+        }
+        .fixed-menu__item--active{
+            border:rem(1px) solid black;
+            border-radius: 50%;
+            transition: .3s;
+        }
+        
+    }
     @include tablets{
         display: none;
     }

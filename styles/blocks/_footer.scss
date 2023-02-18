@@ -1,4 +1,6 @@
 .footer{
+    padding-top: 17px;
+    width: 100%;
     height: rem(151px);
     display: flex;
     .phone{
@@ -28,4 +30,8 @@
     @include phones{
         margin-top: rem(24px);
     }
+}
+.container--footer{
+    display: flex;
+    justify-content: space-between;
 }

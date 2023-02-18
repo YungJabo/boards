@@ -1,0 +1,175 @@
+.work{
+    background: #F8FAF9;
+}
+
+.video{
+    width: 100%;
+    height: 100%;
+    
+}
+.player{
+
+    position: relative;
+    height: 100%;
+    margin-top: 30px;
+    width: 662px;
+    height: 392px;
+    position: relative;
+    @include tablets{
+        width: 590px;
+        height: 351px;
+    }
+    @include phones{
+        width: 394px;
+        height: 240px;
+    }
+    
+    &__splash{
+        &--active{
+            display: none;
+        }
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-image: url('../../img/work/backgr.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &__controls{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-evenly;
+        background: #404040;
+        height: 35px;
+        align-items: center;
+    }
+    &__playback{
+        cursor: pointer;
+        display: flex;
+        width: 55%;
+        position: relative;
+        flex-shrink: 0;
+        @include phones{
+            width: 35%;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            height: 7px;
+            background: #626262;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 5px;
+            flex-shrink: 0;
+        }
+        
+    }
+    &__playback-yellow{
+            position: absolute;
+            height: 7px;
+            background: Yellow;
+            width: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 5px;
+            flex-shrink: 0;
+            z-index: 2;
+    }
+    &__playback-button{
+        cursor: pointer;
+        z-index: 100;
+        border: none;
+        background: Yellow;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 50%;
+        transform: translateY(50%);
+    }
+    &__duration{
+        display: flex;
+        justify-content: space-between;
+        flex-shrink: 0;
+        width: 14%;
+        gap: 5px;
+        margin-right: 5px;
+        @include phones{
+            width: 15%;
+        }
+    }
+    &__mute-btn{
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    &__volume-lvl{
+        cursor: pointer;
+        display: flex;
+        width: 9%;
+        height: max-content;
+        position: relative;
+        flex-shrink: 0;
+        margin-right: 2%;
+        @include phones{
+            width: 13%;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            height: 7px;
+            background: #626262;
+            width: 120%;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 5px;
+            flex-shrink: 0;
+        }
+    }
+    &__volume-button{
+        cursor: pointer;
+        z-index: 100;
+        border: none;
+        background: Yellow;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 50%;
+        transform: translateY(50%);
+    }
+    &__volume-yellow{
+        position: absolute;
+            height: 7px;
+            background: Yellow;
+            width: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 5px;
+            flex-shrink: 0;
+            z-index: 2;
+    }
+}
+
+.container--work{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.button-play{
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.icon--none{
+    display: none;
+}

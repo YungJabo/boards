@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap");
+
+body{
+    position: relative;
+}
+html{
+    overflow-x: hidden;
+    font-size: $baseFontSize;
+    @include tablets{
+        font-size: $baseFontSize - 1px;
+    }
+    @include phones{
+        font-size: $baseFontSize - 2px;
+    }
+}
+
+*{
+    padding:0;
+    margin: 0;
+}
+
+.wrapper{
+    width: 100%;
+    &__content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 95%;
+    max-width: 940px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    &--header{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &--hello{
+        @include tablets{
+        align-items: center;
+        max-width: 665px;
+        }
+    }
+    &--footer{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        @include phones{
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+    }
+}
+
+body{
+    font-family: 'Alegreya Sans';
+}
+.logo{
+    &__icon{
+    width: rem(55px);
+    height: rem(40px);
+    }
+}
+.title{
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: rem(48px);
+    line-height: rem(58px);
+    text-transform: uppercase;
+    &--light{
+        color: white;
+    }
+    &--first{
+        text-align: start;
+        padding-right: 48%;
+        @include tablets{
+            text-align: center;
+            padding: 0;
+        }
+        @include phones{
+            text-align: center;
+            padding: 0;
+        }
+    }
+}
+
+
+
+
+h4{
+    font-style: normal;
+    font-weight: 700;
+    font-size: rem(27px);
+    line-height: rem(32px);
+}
+.button{
+    font-style: normal;
+    font-weight: 800;
+    font-size: rem(16px);
+    line-height: rem(18px);
+    text-transform: uppercase;
+    color: black;
+    padding: rem(21px) rem(41px);
+    background-color: #FEDB3F;
+    border-radius: rem(100px);
+    transition: .2s;
+    cursor:pointer;
+    max-width: max-content;
+    &:hover{
+        background-color: rgb(69, 62, 62); 
+        color: white;
+    }
+    &--reset{
+        background: transparent;
+        text-transform: capitalize;
+        color: white;
+        padding: 0;
+        border-radius: 0;
+        &:hover{
+            background: transparent;
+            color: white;
+        }
+    }
+}
+input[type="submit"],input[type="reset"]{
+    border: none;
+}
+
+
+
