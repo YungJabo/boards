@@ -34,4 +34,7 @@
 .container--footer{
     display: flex;
     justify-content: space-between;
+    @include phones{
+        justify-content: center;
+    }
 }

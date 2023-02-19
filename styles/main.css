@@ -1014,6 +1014,13 @@ input[type=submit], input[type=reset] {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (max-width: 480px) {
+  .container--footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .burger {
   width: 26px;
@@ -1625,7 +1632,7 @@ input[type=submit], input[type=reset] {
   bottom: 0;
   right: 0;
   left: 0;
-  background-image: url("../../img/work/backgr.jpg");
+  background-image: url("../img/work/backgr.jpg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1817,7 +1824,7 @@ input[type=submit], input[type=reset] {
 }
 
 .menu-section {
-  background-image: url("../../img/menu-section/backgr.jpg");
+  background-image: url("../img/menu-section/backgr.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
