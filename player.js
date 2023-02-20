@@ -1,5 +1,15 @@
-function playerFunc(){
-    const videoEl = $('.video')[0];
+
+const videoEl = $('.video')[0];
+
+
+videoEl.load();
+
+
+const delay = () =>{
+
+
+
+
 const playBtn = $('.button-play');
 const durationBtn = $('.player__playback-button');
 const splashContainer = $('.player__splash');
@@ -161,4 +171,5 @@ durationInterval = setInterval(()=>{
     
 },10)
 }
-setTimeout(playerFunc,3000);
+
+setTimeout(delay,2500);
